@@ -1,1 +1,12 @@
 ### Barplot
+library(ggpubr)
+library(tidyverse)
+
+dataframe <- read_csv("data.csv")
+View(dataframe)
+
+ggbarplot(dataframe, x = "sample", y = "value", 
+          add = c("mean_se", "jitter"),
+         fill = "darkseagreen3")
+
+############## 
