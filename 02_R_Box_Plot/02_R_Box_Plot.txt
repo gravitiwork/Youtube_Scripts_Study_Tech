@@ -1,0 +1,42 @@
+###################### Barplot Tutorial 
+###################### https://www.youtube.com/@study_tech_official
+############################################################
+
+
+####################### Load the library  ########
+library(ggplot2)
+library(tidyverse)
+
+###################### If not installed in your syetem then (otherwish skip these two command)
+install.packages("ggplot2")
+install.packages("tidyverse")
+
+###################### load the library 
+library(ggplot2)
+library(tidyverse)
+
+###################### Load the data from the csv 
+
+dataframe <- read_csv("data.csv")
+View(dataframe)
+
+###################### Make Box plot 
+
+boxplot(value ~ sample, data = dataframe,
+        xlab = "Samples",
+        ylab = "Value(unit)",
+        main = "Study_Tech",
+         col = c("red", "green", "blue"))
+
+###################### Add data points
+stripchart(value ~ sample,
+           dataframe,
+           method = "jitter",
+           pch = 20,
+           col = "black",
+           vertical = TRUE,
+           add = TRUE)
+
+##############  Done
+############## subscribe to my Study_Tech Youtube channel
+############## https://www.youtube.com/@study_tech_official
