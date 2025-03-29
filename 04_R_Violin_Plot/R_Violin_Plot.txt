@@ -1,0 +1,41 @@
+###################### Violin plot Tutorial 
+###################### https://www.youtube.com/@study_tech_official
+############################################################
+
+############################ load the library
+
+library(tidyverse)
+
+############################ load the data and view
+
+dataframe <- read.csv("data.csv", header = TRUE, sep = ",")
+View(dataframe)
+
+
+############################ Make simple Violine plot
+p <- ggplot(dataframe, aes(x=sample, y=value)) + 
+     geom_violin()
+p
+
+
+############################# Make sharp edges
+p <- ggplot(dataframe, aes(x=sample, y=value)) + 
+     geom_violin(trim=FALSE)
+p
+
+
+############################# Add boxplot 
+p + geom_boxplot(width=0.1)
+
+
+
+############################# Make colorful  
+p <-ggplot(dataframe, aes(x=sample, y=value, fill=sample)) +
+  geom_violin(trim=FALSE)
+p
+
+p + geom_boxplot(width=0.1)
+
+##############  Done
+############## subscribe to my Study_Tech Youtube channel
+############## https://www.youtube.com/@study_tech_official
