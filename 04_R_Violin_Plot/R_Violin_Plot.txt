@@ -2,6 +2,9 @@
 ###################### https://www.youtube.com/@study_tech_official
 ############################################################
 
+###################### If not installed in your syetem then (otherwish skip these two command) ######
+install.packages("tidyverse")
+
 ############################ load the library
 
 library(tidyverse)
