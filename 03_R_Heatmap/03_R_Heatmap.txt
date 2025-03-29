@@ -1,0 +1,67 @@
+######################      Boxplot Tutorial 
+######################      https://www.youtube.com/@study_tech_official
+
+######################      This video tutorial link- 
+############################################################
+
+###################### If not installed in your syetem then (otherwish skip these two command) ######
+
+install.packages("tidyverse")
+install.packages("pheatmap")
+
+################ Load the library
+
+library(tidyverse)
+library(pheatmap)
+
+################ Load the data and view 
+
+dataframe <- read.csv("data.csv", header = TRUE, sep = ",")
+View(dataframe)
+
+################ Make 1st colume as row name 
+
+dataframe <- data.frame(dataframe, row.names = 1)
+
+############### View the change
+
+View(dataframe)
+
+
+############## Make simple heatmap 
+
+pheatmap(dataframe) 
+
+############## Remove the clusters
+
+pheatmap(dataframe, cluster_cols = FALSE, cluster_rows = FALSE)
+
+
+############## Change the colour 
+
+pheatmap(dataframe, color = hcl.colors(50, "PuOr"))
+
+############## Add border line 
+
+pheatmap(dataframe, border_color = "black")
+
+############## Change the cell size
+
+pheatmap(dataframe, cellheight = 30, cellwidth = 30)
+
+#############
+
+pheatmap(dataframe,
+         display_numbers = TRUE,
+         number_color = "black", 
+         fontsize_number = 8)
+
+
+##############  Done
+############## Subscribe to my Study_Tech Youtube channel
+############## https://www.youtube.com/@study_tech_official
+
+##### pheatmap color palette
+
+##### https://i.sstatic.net/h38qQ.png
+
