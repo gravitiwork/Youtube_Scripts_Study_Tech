@@ -1,4 +1,4 @@
-###################### Barplot Tutorial 
+###################### Boxplot Tutorial 
 ###################### https://www.youtube.com/@study_tech_official
 ############################################################
 
