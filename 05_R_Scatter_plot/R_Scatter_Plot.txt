@@ -1,0 +1,35 @@
+###################### Scatter plot Tutorial 
+###################### https://www.youtube.com/@study_tech_official
+###################### See this tutorial video on Youtube 
+
+###################### If not installed in your syetem then (otherwish skip these two command) ######
+install.packages("tidyverse")
+install.packages("ggplot2")
+
+############################ load the library
+
+library(tidyverse)
+library(ggplot2) 
+
+############################ load the data and view
+
+dataframe <- read.csv("data.csv", header = TRUE, sep = ",")
+View(dataframe)
+
+
+ 
+############################ Draw Scatter plot
+
+ggplot(dataframe,
+       aes(x = parameter_1,
+           y = parameter_2,
+           col = as.factor(group))) +
+  geom_point()
+
+
+
+############## Done
+############## Subscribe to my Study_Tech Youtube channel
+############## https://www.youtube.com/@study_tech_official
+##############
+############## Please subscribe! because making this type of video needs effort and time. 
