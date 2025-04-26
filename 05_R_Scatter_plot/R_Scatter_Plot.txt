@@ -26,7 +26,16 @@ ggplot(dataframe,
            col = as.factor(group))) +
   geom_point()
 
+############################ Making plot object
+plot <- ggplot(dataframe,
+       aes(x = parameter_1,
+           y = parameter_2,
+           col = as.factor(group))) +
+  geom_point()
 
+############################ Adding color
+plot + scale_color_manual(breaks = c("1", "2", "3"),
+                        values=c("red", "blue", "black"))
 
 ############## Done
 ############## Subscribe to my Study_Tech Youtube channel
