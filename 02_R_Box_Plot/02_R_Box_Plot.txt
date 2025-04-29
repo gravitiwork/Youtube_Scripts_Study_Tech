@@ -40,3 +40,43 @@ stripchart(value ~ sample,
 ##############  Done
 ############## subscribe to my Study_Tech Youtube channel
 ############## https://www.youtube.com/@study_tech_official
+
+############################################ Added on subscriber demand 
+
+################# Change font and size
+################################## For Times New Roman use serif
+par(family = "serif")
+boxplot(value ~ sample, data = dataframe,
+        xlab = "Samples",
+        ylab = "Value(unit)",
+        main = "Study_Tech",
+         col = c("red", "green", "blue"))
+
+
+################################## For Arial use sans
+par(family = "sans")
+boxplot(value ~ sample, data = dataframe,
+        xlab = "Samples",
+        ylab = "Value(unit)",
+        main = "Study_Tech",
+         col = c("red", "green", "blue"))
+
+################################## For Courier use mono  #### also change the size
+par(family = "mono")
+par(cex.lab=1.5) # is for y-axis
+par(cex.axis=1.5) # is for x-axis
+par(cex.main=1.5) # is for main
+par(cex.sub=1.5) # is for 
+boxplot(value ~ sample, data = dataframe,
+        xlab = "Samples",
+        ylab = "Value(unit)",
+        main = "Study_Tech",
+         col = c("red", "green", "blue"))
+
+
+################################# Please subscribe my channel
+################################
+############## https://www.youtube.com/@study_tech_official
+
+
+
